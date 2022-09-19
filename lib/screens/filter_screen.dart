@@ -48,8 +48,8 @@ class _FilterItState extends State<FilterIt> {
       valueListenable: _filterColor,
       builder: (context, value, child) {
         final color = value as Color;
-        return Image.network(
-          'https://docs.flutter.dev/cookbook/img-files/effects/instagram-buttons/millenial-dude.jpg',
+        return Image.asset(
+          'assets/dashatars.png',
           color: color.withOpacity(0.5),
           colorBlendMode: BlendMode.color,
           fit: BoxFit.cover,
